@@ -9,7 +9,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "hedberg-terraform-states"
-    key    = "hantlangare.se"
+    key    = var.domain_name
     region = "eu-north-1"
   }
 }
