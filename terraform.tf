@@ -13,7 +13,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "hedberg-terraform-states"
-    key    = var.domain_name
+    key    = "" // Change this
     region = "eu-north-1"
   }
 }
