@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - $default-branch
+  schedule:
+    - cron: '42 3 * * *'
 
 permissions:
   id-token: write
